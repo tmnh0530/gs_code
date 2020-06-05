@@ -1,0 +1,13 @@
+1. SELECT * FROM gs_an_table WHERE id IN (1,3,5)
+
+2. SELECT * FROM gs_an_table WHERE id>=4 AND id<=8
+
+3. SELECT * FROM gs_an_table WHERE email LIKE '%test1%';
+
+4. SELECT * FROM gs_an_table WHERE indate ORDER BY id DESC;
+
+5. SELECT * FROM gs_an_table WHERE age=20 AND  indate LIKE '2020-06%';
+
+6. SELECT * FROM gs_an_table WHERE indate ORDER BY id ASC LIMIT 5;
+
+7. SELECT age,COUNT(*) FROM gs_an_table GROUP BY age HAVING COUNT(*) <=40
